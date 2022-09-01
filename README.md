@@ -1,3 +1,17 @@
+# Final Analysis & Report on the Charity Funding Predictor
+
+## 1. Overview
+Using deep Learning and Neural Networks, we determined if applicants were a yes or a no on being funded by "Alphabet Soup" whom previously funded more than 34,000 organizations.
+
+## 2. Results
+*Data Preprocessing This dataset removed any irrelevant information such as the ‘EIN’ and ‘NAME’ columns being dropped. The remaining columns were features of the model. We did add the ‘NAME’ column back into the 2nd test but we then replaced the ‘CLASSIFICATION’ and ‘APPLICATION_TYPE’ columns with ‘OTHER’ due to a high fluctuation. Afterwards, we split the data into both training and testing sets. Our ‘Target Variable’ for the model used is the “IS_SUCCESSFUL” column; valued with 1 for yes and 0 for no. We analyzed the ‘APPLICATION’ data and used the ‘CLASSIFICATION’ data for binning. Unique values used many data points as cutoff points to bin the rare categorical variables together into a new value called; ‘Other’. We then checked to see if binning was a success, and we used ‘pd.get_dummies() to encode categorical variables.
+
+*Compiling, Training, and Evaluating the Model We used Neural Network on each model in 3 different layers. The number of hidden nodes was dependent on the number of features. The first attempt only saw us with 477 total params with roughly a 0.72/0.73 accuracy which fell short of our 75% or above goal.
+
+## 3. Summary
+Using a Deep Learning model you should always have multiple layers. The more the better considering the computers are predicting and classifying the information by filtering inputs through each of them for more data.
+
+
 # Deep Learning Homework: Charity Funding Predictor
 
 ## Background
